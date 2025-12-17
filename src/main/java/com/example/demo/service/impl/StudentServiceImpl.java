@@ -17,5 +17,9 @@ public class StudentServiceImpl implements StudentService {
     public StudentEntity addStudents(StudentEntity student) {
         return repo.save(student);
     }
+    public List<StudentEntity> getStudent()
+    {
+        return repo.
+    }
 
 }
