@@ -39,16 +39,16 @@ public class StudentEntity {
         this.age = age;
     }
 
-    public String getName(String name)
+    public String getName()
     {
-        return name;
+        return this.name;
     }
-    public String getEmail(String email)
+    public String getEmail()
     {
-        return email;
+        return this.email;
     }
-    public int getAge(int age)
+    public int getAge()
     {
-        return age;
+        return this.age;
     }
 }
