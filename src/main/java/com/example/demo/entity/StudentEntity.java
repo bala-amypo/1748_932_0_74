@@ -34,7 +34,7 @@ public class StudentEntity {
     {
         this.email = email;
     }
-    public void setAge(String age)
+    public void setAge(int age)
     {
         this.age = age;
     }
