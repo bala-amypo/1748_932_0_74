@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class StudentEntity {
-    private long id;
+    private Long id;
     private String name;
     private String email;
     private int age;
