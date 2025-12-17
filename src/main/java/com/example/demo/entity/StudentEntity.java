@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 @Entity
 public class StudentEntity {
 
@@ -15,7 +16,8 @@ public class StudentEntity {
     private String email;
     private float cgpa;
 
-    public StudentEntity() {}
+    public StudentEntity() {
+    }
 
     public StudentEntity(String name, String email, float cgpa) {
         this.name = name;

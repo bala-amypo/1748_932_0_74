@@ -13,26 +13,25 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    StudentRepository repo;
+    private StudentRepository repository;
 
     @Override
-    public StudentEntity addStudents(StudentEntity student) {
-        return repo.save(student);
+    public StudentEntity addStudent(StudentEntity student) {
+        return repository.save(student);
     }
 
     @Override
-    public List<StudentEntity> getStudents() {
-        return repo.findAll();
+    public List<StudentEntity> getAllStudents() {
+        return repository.findAll();
     }
 
     @Override
     public StudentEntity getStudentById(Long id) {
-        return repo.findById(id).orElse(null);
+        return repository.findById(id).orElse(null);
     }
 
     @Override
     public void deleteStudentById(Long id) {
-        repo.deleteById(id);
+        repository.deleteById(id);
     }
-
 }
