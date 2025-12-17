@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
-
+import java.util.List;
 
 @RestController
 public class StudentController {

@@ -19,7 +19,7 @@ public class StudentServiceImpl implements StudentService {
     }
     public List<StudentEntity> getStudent()
     {
-        return repo.
+        return repo.findAll();
     }
 
 }
