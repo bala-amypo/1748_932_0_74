@@ -20,12 +20,12 @@ public class StudentController {
     @Autowired
     StudentService ser;
 
-    @PostMapping("/addStudents")
+    @PostMapping("/addStudent")
     public StudentEntity addStudents(@RequestBody StudentEntity student){
         return ser.addStudents(student);
     }
     
-    @GetMapping("/getStudents")
+    @GetMapping("/getStudent")
     public List<StudentEntity> getStudents() {
         return ser.getStudents();
     }
