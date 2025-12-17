@@ -32,7 +32,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public void deleteStudentById(Long id) {
-        repo.deleteById(id).orElse(null);
+        repo.deleteById(id);
     }
 
 }
