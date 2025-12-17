@@ -14,6 +14,25 @@ public class StudentEntity {
     private String email;
     private int age;
 
-    StudentEntity()
+    StudentEntity(Long id , String name , String email , int age)
+    {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+    public void setName(String name)
 
+    public String getName(String name)
+    {
+        return name;
+    }
+    public String getEmail(String email)
+    {
+        return email;
+    }
+    public int getAge(int age)
+    {
+        return age;
+    }
 }
