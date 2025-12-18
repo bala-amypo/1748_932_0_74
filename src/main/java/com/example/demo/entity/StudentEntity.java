@@ -25,9 +25,7 @@ public class StudentEntity {
         this.cgpa = cgpa;
     }
 
-    public Long getId() {
-        return id;
-    }
+    
 
     public String getName() {
         return name;
