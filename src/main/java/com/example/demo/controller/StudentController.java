@@ -28,6 +28,7 @@ public class StudentController {
     @GetMapping("/{id}")
     public StudentEntity getStudentById(@PathVariable Long id) {
         return service.getStudentById(id);
+        
     }
 
     @DeleteMapping("/{id}")
