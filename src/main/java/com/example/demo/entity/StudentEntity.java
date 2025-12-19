@@ -16,7 +16,7 @@ public class StudentEntity {
     @Email
     private String email;
     private float cgpa;
-    // @Size(Min = 18 , Max = 40)
+    // @Size(min = 18 , max = 40)
     public StudentEntity() {
     }
 
