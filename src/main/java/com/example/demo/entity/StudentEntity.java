@@ -44,7 +44,7 @@ public class StudentEntity {
         this.email = email;
     }
     public void setId(Long id){
-        this.
+        this.id = id;
     }
 
     public Long getId(){
