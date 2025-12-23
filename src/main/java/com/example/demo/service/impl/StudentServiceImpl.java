@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.springframework.transaction.annotation.Transactional;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
@@ -20,7 +20,9 @@ public class StudentServiceImpl implements StudentService {
         repository.save(student);
         if(student.getName().equals("abcd")
         {
-            throw new ResourceNotFoundException("
+            throw new ResourceNotFoundException("Error");
+        }
+        return student;
     }
 
     @Override
