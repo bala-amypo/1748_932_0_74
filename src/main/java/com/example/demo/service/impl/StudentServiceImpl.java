@@ -15,9 +15,12 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentRepository repository;
 
-    @Override
+    @Transactional
     public StudentEntity addStudent(StudentEntity student) {
-        return repository.save(student);
+        repository.save(student);
+        if(student.getName().equals("abcd")
+        {
+            throw new ResourceNotFoundException("
     }
 
     @Override
