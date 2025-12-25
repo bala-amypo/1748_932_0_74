@@ -4,4 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entity.StudentEntity;
 
 public interface StudentRepository extends JpaRepository<StudentEntity, Long> {
+    
+    @Query("FROM S")
+    List<SudentEntity> findStudentWithCgpa(@Param("cgpa") float cgpa);
 }
