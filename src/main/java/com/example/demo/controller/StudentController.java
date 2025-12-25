@@ -41,4 +41,11 @@ public class StudentController {
             return "Student not found";
         }
     }
+
+    @GetMapping("/{id}")
+    public List<StudentEntity> getAllStudentsWithCgpa()
+    {
+        return service.getAllStudentsWithCgpa();
+    }
+
 }
