@@ -43,9 +43,9 @@ public class StudentController {
     }
 
     @GetMapping("/{id}")
-    public List<StudentEntity> getAllStudentsWithCgpa()
+    public List<StudentEntity> getAllStudentsWithCgpa(@PathVariable float cgpa)
     {
-        return service.getAllStudentsWithCgpa();
+        return service.getAllStudentsWithCgpa(cgpa);
     }
 
 }

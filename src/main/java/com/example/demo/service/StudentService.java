@@ -12,4 +12,6 @@ public interface StudentService {
     StudentEntity getStudentById(Long id);
 
     void deleteStudentById(Long id);
+
+    List<StudentEntity> getAllStudentsWithCgpa(float cgpa);
 }

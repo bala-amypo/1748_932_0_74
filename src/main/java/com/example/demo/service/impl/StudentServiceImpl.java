@@ -40,4 +40,9 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudentById(Long id) {
         repository.deleteById(id);
     }
+
+    @Override
+    public List<StudentEntity> getAllStudentsWithCgpa(float cgpa){
+        return repository.findStudentWithCgpa(cgpa);
+    }
 }
