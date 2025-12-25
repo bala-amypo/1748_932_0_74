@@ -42,7 +42,7 @@ public class StudentController {
         }
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{cgpa}")
     public List<StudentEntity> getAllStudentsWithCgpa(@PathVariable float cgpa)
     {
         return service.getAllStudentsWithCgpa(cgpa);
